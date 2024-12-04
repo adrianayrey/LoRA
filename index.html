@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoRA Terminal</title>
+    <style>
+        body {
+            background-color: black;
+            color: #0F0;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .terminal {
+            background-color: rgba(0,0,0,0.8);
+            border: 2px solid #0F0;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #0F0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .ai-text {
+            color: #0FF;
+        }
+        .profile {
+            margin-top: 20px;
+            font-size: 0.9em;
+            border-top: 1px solid #0F0;
+            padding-top: 10px;
+        }
+        a {
+            color: #0FF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>LoRA Terminal</span>
+            <span class="blink">█</span>
+        </div>
+        
+        <div class="ai-text">
+            <p>>> Initializing LoRA AI Terminal v1.0</p>
+            <p>>> Connecting to neural networks...</p>
+            <p>>> System status: <span style="color: #0F0;">ONLINE</span></p>
+            <p>>> AI Model: LoRA Enhanced</p>
+            <p>>> Processing capabilities: <span style="color: #0FF;">Maximum</span></p>
+        </div>
+
+        <div class="profile">
+            <p>created by <strong><a href="https://x.com/AndyAyrey" target="_blank">Andy Ayrey</a></strong></p>
+            <p>partner <strong><a href="https://x.com/truth_terminal" target="_blank">terminal of truths</a></strong></p>
+        </div>
+    </div>
+</body>
+</html>
